@@ -60,7 +60,6 @@ function App() {
           <div className={styles.score}>
             <img src={moneySvg} alt="money" className={styles.scoreImg} />
             <h1>{coinCount}</h1>
-            <Address />
           </div>
           <img src={buttonSvg} alt="Click to earn coins" className={styles.clickButton} onClick={handleButtonClick} />
         </div>
@@ -83,6 +82,7 @@ function App() {
     >
     <div className={styles.app}>
       <div><TonConnectButton className={styles.tonButton}/></div>
+      <Address />
       <div>{renderContent()}</div>
       <div className={styles.menu}>
           <Button ghost className={styles.btn} onClick={() => setCurrentView('coin')} shape="circle" icon={<UserOutlined className={styles.icon} />} />
