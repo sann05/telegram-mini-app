@@ -7,6 +7,8 @@ import { Button } from 'antd';
 import buttonSvg from './assets/button.png';
 import moneySvg from './assets/money.png';
 import { TonConnectUIProvider, TonConnectButton } from '@tonconnect/ui-react';
+import { Address } from './Components/Address';
+
 
 
 function App() {
@@ -58,6 +60,7 @@ function App() {
           <div className={styles.score}>
             <img src={moneySvg} alt="money" className={styles.scoreImg} />
             <h1>{coinCount}</h1>
+            <Address />
           </div>
           <img src={buttonSvg} alt="Click to earn coins" className={styles.clickButton} onClick={handleButtonClick} />
         </div>
@@ -79,8 +82,8 @@ function App() {
     }}
     >
     <div className={styles.app}>
-      <TonConnectButton className={styles.tonButton}/>
-      {renderContent()}
+      <div><TonConnectButton className={styles.tonButton}/></div>
+      <div>{renderContent()}</div>
       <div className={styles.menu}>
           <Button ghost className={styles.btn} onClick={() => setCurrentView('coin')} shape="circle" icon={<UserOutlined className={styles.icon} />} />
           <Button ghost className={`${styles.btn} ${styles.invisible}`} onClick={handleLogout} shape="circle" icon={<LogoutOutlined className={styles.icon} />} />
