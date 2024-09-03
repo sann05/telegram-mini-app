@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './App.module.scss';
-import { addUser, updateUserCoins, getUser, getAllUsers, clearDB } from './Database/db';
-import { countries } from './Database/countries';
+import { updateUserCoins, getUser, clearDB } from './Database/db';
 import Leaderboard from './Components/Leaderboard/Leaderboard';
-import populateDB from './Database/populateDB';
 import { UserOutlined, TrophyOutlined, LogoutOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import buttonSvg from './assets/button.png';
