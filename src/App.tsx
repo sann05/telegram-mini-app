@@ -1,4 +1,3 @@
-import React from "react";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import EntryPoint from "./Components/EntryPoint";
 
