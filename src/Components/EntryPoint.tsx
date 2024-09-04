@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from "react";
 import styles from "../App.module.scss";
 import { updateUserCoins, getUser, clearDB } from "../Database/db";
